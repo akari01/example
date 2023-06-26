@@ -1,7 +1,8 @@
+/* こいつ消さない */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +25,23 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+/* double dash > make custom colour set */
+:root {
+  --shiga-colour: #1e3d58;
+}
+
+/* make default m/p value 0 = resetCSS*/
+* {
+  margin: 0;
+  padding: 0;
+  /* /はみ出さない様にする */
+  box-sizing: border-box;
+}
+
+body {
+  /* default =16px make it 10px */
+  font-size: 62.5%;
+  background-color: var(--shiga-colour);
 }
